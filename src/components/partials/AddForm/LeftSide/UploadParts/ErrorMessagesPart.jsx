@@ -22,7 +22,7 @@ function ErrorMessagesPart({ invalidFiles, validFileTypes, file, theme }) {
               {validFileTypes.includes(file.type)
                 ? file.type.startsWith("image")
                   ? "This image is too large. Please upload only files less than 5MB."
-                  : "This video is too large. Please upload only files less than 50MB."
+                  : "This video is too large. Please upload only files less than 15MB."
                 : "Invalid file type. Please upload only supported file formats."}
             </Text>
           </Stack>

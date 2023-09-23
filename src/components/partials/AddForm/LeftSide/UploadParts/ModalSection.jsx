@@ -32,7 +32,7 @@ const validFileTypes = [
 ];
 const maxFileSize = {
   image: 5 * 1024 * 1024, // 5MB in bytes
-  video: 50 * 1024 * 1024, // 50MB in bytes
+  video: 15 * 1024 * 1024, // 15MB in bytes
 };
 
 // The ModalSection component handles the modal interactions for the Upload feature
