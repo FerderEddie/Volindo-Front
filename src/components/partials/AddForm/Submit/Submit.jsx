@@ -142,7 +142,7 @@ function Submit() {
           bgColor={"#AACD5F"}
           borderRadius={26}
           mt={{ base: 3, lg: 2 }}
-          mb={{ base: 6, lg: 6 }}
+          mb={{ base: 10, lg: 6 }}
           py={{ base: 4, sm: 4, md: 5, lg: 5, xl: 6 }}
           border={"solid 2px #AACD5F"}
           fontFamily={"Poppins"}
