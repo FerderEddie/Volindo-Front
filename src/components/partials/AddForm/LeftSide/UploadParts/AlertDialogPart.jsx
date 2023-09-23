@@ -9,7 +9,7 @@ import {
   Button
 } from '@chakra-ui/react';
 
-/* tahat */
+
 function AlertDialogPart({ isOpen, onClose, onDelete, cancelRef }) {
 return (
   <div>
