@@ -72,7 +72,7 @@ function Submit() {
     try {
       // API call to submit the advertisement data
       const response = await axios.post(
-        "http://localhost:4000/advertisements/addAdvertisement",
+        "https://volindo-back.onrender.com/advertisements/addAdvertisement",
         JSON.stringify(formValues),
         {
           headers: {

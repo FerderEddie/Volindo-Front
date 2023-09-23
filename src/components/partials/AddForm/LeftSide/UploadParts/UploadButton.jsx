@@ -4,7 +4,7 @@ import { BsFillPlusCircleFill } from "react-icons/bs"; // Plus icon from react-i
 import { BsImage } from "react-icons/bs"; // Plus icon from react-icons
 import { AiFillPlayCircle } from "react-icons/ai"; // Play icon from react-icons
 
-const baseURL = "http://localhost:4000";
+const baseURL = "https://volindo-back.onrender.com";
 
 function UploadButton({ index, uploadedFiles, onOpen }) {
   // Retrieves the file object based on the given index from the uploadedFiles array

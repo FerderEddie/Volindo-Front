@@ -37,7 +37,7 @@ function Buttons() {
       const fileIds = uploadedFiles.map((file) => file._id); // Assuming `_id` is the identifier
 
       // Send DELETE request to server with file ids
-      await axios.delete("http://localhost:4000/files/deleteUploadedFiles", {
+      await axios.delete("https://volindo-back.onrender.com/files/deleteUploadedFiles", {
         data: { ids: fileIds },
       });
 

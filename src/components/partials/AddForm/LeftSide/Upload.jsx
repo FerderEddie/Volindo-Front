@@ -91,7 +91,7 @@ function Upload() {
   const deleteUploadedFile = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:4000/files/delete/${id}`
+        `https://volindo-back.onrender.com/files/delete/${id}`
       );
       if (response.data.success) {
         setUploadedFiles((prevFiles) =>
@@ -107,7 +107,7 @@ function Upload() {
   const fetchUploadedFiles = async () => {
     try {
       setIsButtonsLoading(true);
-      const response = await axios.get("http://localhost:4000/files/get");
+      const response = await axios.get("https://volindo-back.onrender.com/files/get");
 
       // Check if the response contains a valid 'files' array
       if (response.data?.files && Array.isArray(response.data.files)) {

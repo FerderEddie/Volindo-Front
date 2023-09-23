@@ -123,7 +123,7 @@ export const uploadFilesHandler = async (options) => {
       try {
         // Try uploading the file
         const response = await axios.post(
-          "http://localhost:4000/files/addFiles",
+          "https://volindo-back.onrender.com/files/addFiles",
           formData,
           {
             headers: {
