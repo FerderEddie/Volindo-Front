@@ -37,10 +37,17 @@ The Volindo-AD-Manager is a comprehensive platform for travel agents to effortle
 This project is the culmination of a full-stack course, demonstrating the integration of various technologies and skills in a Single Page Application (SPA) that offers a seamless and interactive user experience.
 
 
-## Note
+## Link 
+https://volindo-project-xz4u.onrender.com/
 
-**TO RUN THIS PROJECT, YOU NEED env DATA, WHICH IS KEPT BY THE AUTHOR. THEN, RUN `npm run dev` IN BOTH TERMINALS OF THE VOLINDO BACK/FRONT FOLDERS.**
 
 ## Project Screenshots
+
+![1](https://github.com/FerderEddie/Volindo-Front/assets/110486605/a1632cc0-ed1c-46a0-b63e-46ff04a7bda4)
+![2](https://github.com/FerderEddie/Volindo-Front/assets/110486605/2ff6b43c-b23c-4351-803e-5e72e0767d52)
+![3](https://github.com/FerderEddie/Volindo-Front/assets/110486605/bddced4f-6195-4a36-9b03-6a7b168982dc)
+![4](https://github.com/FerderEddie/Volindo-Front/assets/110486605/b070b50e-91be-47eb-ac78-1b02da75c57f)
+
+
 
 
