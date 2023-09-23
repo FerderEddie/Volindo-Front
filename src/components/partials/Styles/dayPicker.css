@@ -1,0 +1,265 @@
+/* Customize the appearance of the day picker */
+.rdp {
+  /* Modify the cell size */
+  --rdp-cell-size: 32px;
+
+  /* Modify the accent color */
+  --rdp-accent-color: #aacd5f;
+
+  /* Modify the background color */
+  --rdp-background-color: transparent;
+}
+
+/* Style for hover effect on buttons */
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  border: solid 1px #797979;
+}
+
+/* Display months in a flex container */
+.rdp-months {
+  padding-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style for individual cells */
+.rdp-cell {
+  padding-top: 5px;
+}
+
+/* Style for selected days */
+.rdp-day_selected,
+.rdp-day_selected:focus-visible,
+.rdp-day_selected:hover {
+  color: black !important;
+  background-color: var(--rdp-accent-color) !important;
+  border: 2px none !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+}
+
+/* Base button style */
+.rdp-button:focus {
+  border: 2px solid transparent;
+}
+
+/* Style for caption of the first (left) month */
+.rdp-month:nth-child(1) .rdp-caption {
+  margin-left: 1px !important;
+  margin-right: 35% !important;
+}
+
+/* Style for caption of the second (right) month */
+.rdp-month:nth-child(2) .rdp-caption {
+  margin-left: 20% !important;
+  margin-right: 1px !important;
+}
+
+/* Add padding to the caption to create space between arrow and text */
+.rdp-caption {
+  padding-left: 20px !important; /* Adjust the value as needed */
+}
+
+.rdp-nav_button:focus,
+.rdp-nav_button:active {
+  border: none !important;
+  outline: none !important;
+  color: white;
+  font-size: xx-large !important;
+}
+
+.rdp-nav_button:hover {
+  border: none !important;
+  outline: none !important;
+  color: #797979;
+  font-size: xx-large !important;
+}
+
+/* Style for navigation buttons */
+.rdp-nav_button {
+  font-size: xx-large !important;
+  border: none !important;
+  outline: none !important;
+}
+
+@media (max-width: 480px) {
+  .rdp {
+    --rdp-cell-size: 24px; /* Adjusted cell size for mobile */
+    --rdp-caption-font-size: 14px; /* Adjusted caption font size for mobile */
+    margin: 0 auto; /* to center the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rdp-nav_button {
+    width: 40px; /* Adjust the width as necessary */
+  }
+
+  .rdp-month:not(:first-child) {
+    border-top: 1px solid #3f3f3f; /* Add a left border to the first day of the second month */
+    padding-top: 8px;
+    border-left: none !important;
+  }
+
+  .rdp-months {
+    display: block; /* Change to block to stack the months vertically */
+  }
+
+  .rdp-month {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+
+  .rdp-with_weeknumber .rdp-table {
+    max-width: calc(
+      var(--rdp-cell-size) * 8
+    ); /* Update the max-width according to the new cell size */
+  }
+
+  .rdp-head_cell {
+    font-size: 0.65em; /* Adjust the font size to fit smaller cells */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 769px) {
+  .rdp {
+    --rdp-cell-size: 30px; /* Adjusted cell size for mobile */
+    --rdp-caption-font-size: 17px; /* Adjusted caption font size for mobile */
+    margin: 0 auto; /* to center the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rdp-nav_button {
+    width: 40px; /* Adjust the width as necessary */
+  }
+
+  .rdp-month:not(:first-child) {
+    border-top: 1px solid #3f3f3f; /* Add a left border to the first day of the second month */
+    padding-top: 6px;
+    border-left: none !important;
+  }
+
+  .rdp-months {
+    display: block; /* Change to block to stack the months vertically */
+  }
+
+  .rdp-month {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+
+  .rdp-head_cell {
+    font-size: 0.65em; /* Adjust the font size to fit smaller cells */
+  }
+
+  .rdp-day {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .rdp {
+    --rdp-cell-size: 24px; /* Adjusted cell size for mobile */
+    --rdp-caption-font-size: 17px; /* Adjusted caption font size for mobile */
+    margin: 0 auto; /* to center the container */
+    display: flex;
+    padding: 10px;
+    flex-direction: row !important;
+    align-items: center;
+  }
+  .rdp > * {
+    flex: 1; /* This will cause the child elements to evenly distribute themselves in the row */
+  }
+
+  .rdp-nav_button {
+    width: 35px; /* Adjust the width as necessary */
+  }
+
+  .rdp-month {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+
+  .rdp-head_cell {
+    font-size: 0.65em; /* Adjust the font size to fit smaller cells */
+  }
+
+  .rdp-day {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1280px) {
+  .rdp {
+    --rdp-cell-size: 21px; /* Adjusted cell size for mobile */
+    --rdp-caption-font-size: 16px; /* Adjusted caption font size for mobile */
+    margin: 0 auto; /* to center the container */
+    display: flex;
+    padding: 10px;
+    flex-direction: row !important;
+    align-items: center;
+  }
+  .rdp > * {
+    flex: 1; /* This will cause the child elements to evenly distribute themselves in the row */
+  }
+
+  .rdp-nav_button {
+    width: 40px; /* Adjust the width as necessary */
+  }
+
+  .rdp-month {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+
+  .rdp-head_cell {
+    font-size: 0.65em; /* Adjust the font size to fit smaller cells */
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 2560px) {
+  .rdp {
+    --rdp-cell-size: 28px; /* Adjusted cell size for mobile */
+    --rdp-caption-font-size: 18px; /* Adjusted caption font size for mobile */
+    margin: 0 auto; /* to center the container */
+    display: flex;
+    padding: 10px;
+    flex-direction: row !important;
+    align-items: center;
+  }
+  .rdp > * {
+    flex: 1; /* This will cause the child elements to evenly distribute themselves in the row */
+  }
+
+  .rdp-nav_button {
+    width: 40px; /* Adjust the width as necessary */
+  }
+
+  .rdp-month {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+
+  .rdp-head_cell {
+    font-size: 0.9em; /* Adjust the font size to fit smaller cells */
+  }
+
+  .rdp-day {
+    font-size: 16px;
+  }
+}
+
+/* Style for months except the first one */
+.rdp-month:not(:first-child) {
+  border-left: 1px solid #3f3f3f; /* Add a left border to the first day of the second month */
+  padding-left: 8px;
+}
+
+/* Style for header cells */
+.rdp-head_cell {
+  padding-top: 16px;
+  text-transform: capitalize;
+}
