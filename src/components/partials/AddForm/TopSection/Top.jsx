@@ -60,7 +60,7 @@ function Top({advertisementName, setAdvertisementName}) {
             border="2px solid #3F3F3F"
             color="white"
             placeholder="New Advertisement"
-            w={{ base: "100%", sm: "60%", md: "50%", lg: "30%", xl: "30%" }}
+            w={{ base: "100%", sm: "70%", md: "60%", lg: "30%", xl: "30%" }}
             _focus={{
               boxShadow: "none",
               border: "solid 2px #7f827f",
@@ -73,7 +73,6 @@ function Top({advertisementName, setAdvertisementName}) {
               setAdvertisementName(e.target.value);
             }}
           />
-          <BiEdit color="white" fontSize={27} />
         </Flex>
       </Stack>
     </>
